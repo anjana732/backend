@@ -1,18 +1,16 @@
-//require ('dotenv').config()
-const express = require('express')
-const { default: mongoose } = require('mongoose')
-//const { DB_NAME } = require('./src/constants')
-//const { default: connectDB } = require('./src/db')
-import { DB_NAME } from './src/constants.js'
+
+//const express = require('express')
+//const { default: mongoose } = require('mongoose')
+
 import dotenv from 'dotenv'
 import connectDB from './src/db/index.js'
-const app = express()
+//const app = express()
 
 dotenv.config({
     path: './env'
 })
 
-connectDB()
+connectDB();
 //const port = 4000
 
 
